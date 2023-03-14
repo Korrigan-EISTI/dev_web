@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICE 2</title>
+</head>
+<body>
+    <div class="img">
+        <img src="./pop-jeu-1-1.jpg" id="IMG" onmouseover="changeImgIn();" onmouseout="changeImgOut();" onclick="infos();"/><br>
+        <button onclick="changeImg()">OUI</button>
+    </div>
+</body>
+</html>
+<script>
+    function changeImgIn(){
+        document.getElementById("IMG").src = "./aut-emo-1-1.jpg";
+    }
+
+    function changeImgOut(){
+        document.getElementById("IMG").src = "./pop-jeu-1-1.jpg";
+    }
+
+    function infos(){
+        console.log(document.getElementById("IMG").src + "\n" + document.getElementById("IMG").style.height + "\n" + document.getElementById("IMG").style.width);
+    }
+
+    function changeImg(){
+        let rand = random();
+        if (rand < 0 || rand > 5) return;
+        switch (rand){
+            case 0:
+                document.getElementById("IMG").src = "./aut-emo-1-1.jpg";
+                break;
+            case 1:
+                document.getElementById("IMG").src = "./pop-jeu-1-1.jpg";
+                break;
+            case 2:
+                document.getElementById("IMG").src = "./pop-fil-3-1.jpg";
+                break;
+            case 3:                
+                document.getElementById("IMG").src = "./ani-for-4-1.jpg";
+                break;  
+            case 4:
+                document.getElementById("IMG").src = "./pop-jeu-3-1.jpg";
+                break; 
+            case 5:          
+                document.getElementById("IMG").src = "./aut-pla-1-1.jpg";
+                break; 
+            default:
+                break;    
+        }
+    }
+
+    function random(){
+        let i = Math.random();
+        return parseInt(i*6);
+    }
+</script>

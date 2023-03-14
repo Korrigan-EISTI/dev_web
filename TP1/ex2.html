@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>EX2</title>
+</head>
+
+<body>
+    <header><h1>Formulaire</h1></header>
+    <section>
+        <form action="bravo.html" method="post"><br>
+            <label for="id"><span>Identifiant : *</span> 
+                <input type="text" id="id" name="id" pattern="[a-z]*" placeholder="Identifiant" autofocus required/>
+            </label><br>
+            <label for="pwd"> <span>Password : *</span> 
+                <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{4,8}" placeholder="Password"/>
+            </label><br>
+            <label for="hidden">
+                <input type="hidden" id="MAX_SIZE_FILE" value="30000"/>
+            </label><br>   
+            <label for="file">
+                <input type="file" name="user_files" multiple/>
+            </label> <br><br>
+            <input type="submit" id="submit"/>     
+        </form>
+    </section>
+</body>
+
+</html>

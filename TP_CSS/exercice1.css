@@ -1,0 +1,25 @@
+li{
+    display: inline-block;
+    margin: 25px;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #FFDF5C;
+    font-style: italic;
+}
+
+
+#menu{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+}

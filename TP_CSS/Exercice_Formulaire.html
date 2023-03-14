@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h2>Demande de contact</h2>
+    <div id="information">Merci de remplir tous les champs requis afin que nous puissons vous rejoindre rapidement</div>
+    <section>
+        <form action="bravo.html" method="post">
+            <label for="name"><span>Nom : *</span>
+                <input type="text" id="name" name="name" pattern="[a-z]*" placeholder="Nom" autofocus required/>
+            </label><br>
+            <label for="prenom"><span>Prénom : *</span> 
+                <input type="text" id="prenom" name="prenom" pattern="[a-z]*" placeholder="Prénom" required/>
+            </label><br>  
+            <label for="email"><span>Email : *</span> 
+                <input type="text" id="mail" name="mail" pattern="[a-z]*" placeholder="Email" required/>
+            </label><br>
+            <label for="tel"><span>Téléphone : *</span> 
+                <input type="text" id="tel" name="tel" pattern="[0-9]*" placeholder="tel" required/>
+            </label><br>
+        </form>
+    </section>
+</body>
+</html>
